@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+
+
+  body{
+background-color: hsl(30, 38%, 92%);
+display: flex;
+height: 100%;
+padding: 1rem;
+
+font-family: 'Montserrat', sans-serif;
+font-weight: 500;
+color:  hsl(228, 12%, 48%);
+  }
+
+
+  
+
+  .rasm img{
+    border-radius: 1rem 1rem 0 0;
+}
+
+.product{
+      display: flex;
+      flex-direction: column;
+
+  }
+
+  .info{
+    background-color: white;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 0 0 1rem 1rem;
+    flex-wrap: wraps;
+
+  }
+  .lable{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  
+  }
+  .title{
+    line-height: 1;
+    color: hsl(212, 21%, 14%);
+
+  }
+
+
+  .narx{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    
+  }
+  .narxyangi{
+    font-size: 2rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+ color: hsl(158, 36%, 37%);
+  }
+  .narxeski{
+    text-decoration: line-through;
+  }
+
+  .tugma{
+    display: flex;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+    gap: 1rem;
+    border: 0;
+  }
+  @media (min-width:600px){
+
+    .product{
+
+        flex-direction: row;
+    }
+  }
+
+  
